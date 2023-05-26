@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="/changingcontentonDOm/style.css" />
+    <link rel="stylesheet" href="/reovingDOMelement/style.css" />
+    <title>Feed Back</title>
+  </head>
+  <!-- <body oncontextmenu="return false"> -->
+  <body>
+    <header>
+      <h1>FoodieFood Here</h1>
+      <!-- <a href="about.html" style="padding: 2px 10px; font-size: 10px"
+        >Credits</a -->
+      >
+      <a href="index.html">Back</a>
+    </header>
+
+    <main id="main">
+      <h4>FeedBack Form</h4>
+
+      <style>
+        form {
+          margin-top: 20px;
+          background-color: #fff;
+          padding: 20px;
+          /* margin: 20p; */
+          border-radius: 10px;
+        }
+
+        form * {
+          margin: 10px;
+          padding-right: 10px;
+          width: 100%;
+          box-sizing: border-box;
+        }
+
+        form input,
+        textarea {
+          padding: 5px 10px;
+          font-size: 10px;
+          border: 1px solid gainsboro;
+          border-radius: 5px;
+          box-sizing: ;
+        }
+
+        form button {
+          padding: 5px 10px;
+          background-color: royalblue;
+          border: none;
+          color: #fff;
+          border-radius: 5px;
+        }
+
+        form label {
+          display: flex;
+          align-items: center;
+          font-size: 10px;
+          color: gray;
+
+          user-select: none;
+        }
+
+        form label input,
+        form input[type="radio"] {
+          width: auto;
+        }
+
+        .d-flex {
+          display: flex;
+        }
+      </style>
+
+      <form name="feedBack">
+        <div class="fullName">
+          <input type="text" placeholder="Enter Full Name" name="fullName" />
+        </div>
+        <div class="d-flex">
+          <div class="d-flex">
+            <input
+              type="radio"
+              name="type"
+              value="general-feedBack"
+              id="general-feedBack"
+            />
+            <label for="general-feedBack">General FeedBack</label>
+          </div>
+
+          <div class="d-flex">
+            <input
+              name="type"
+              type="radio"
+              value="technical-support"
+              id="technical-support"
+            />
+            <label for="technical-support">Technical Support</label>
+          </div>
+
+          <div class="d-flex">
+            <input
+              class="d-flex"
+              name="type"
+              type="radio"
+              value="contribution"
+              id="contribution"
+            />
+            <label for="contribution">Contribution</label>
+          </div>
+        </div>
+
+        <div>
+          <input type="email" placeholder="you@awesome.com" name="email" />
+        </div>
+
+        <div>
+          <textarea
+            name="description"
+            id=""
+            placeholder="Enter your FeedBack"
+            rows="4"
+          ></textarea>
+        </div>
+
+        <div>
+          <label for="terms">
+            <input type="checkbox" id="terms" name="terms" />
+            I accept terms and conditions
+          </label>
+        </div>
+
+        <div>
+          <button>submit</button>
+        </div>
+      </form>
+
+      <!-- DummyForm -->
+      <!-- <form action=""></form> -->
+    </main>
+
+    <!-- <script src="/main/main.js"></script> -->
+    <!-- <script src="/-EventDelegation&DynamicEvent/script.js"></script> -->
+    <script src="feedback.js"></script>
+  </body>
+</html>
